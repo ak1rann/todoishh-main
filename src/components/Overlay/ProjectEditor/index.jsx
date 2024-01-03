@@ -79,12 +79,12 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
     <div className="overlay" onClick={(event) => closeOverlay(event)}>
       <div className="add-project__modal" onClick={(event) => event.stopPropagation()}>
         <header className="add-project__modal--header">
-          <h4>{isEdit ? "Edit" : "Add"} Project</h4>
+          <h4>{isEdit ? "Редагувати" : "додати"} Проєкт</h4>
         </header>
         <div className="add-project__modal--content">
           <form action="" autoComplete="off" onSubmit={(e) => addProjectHandler(e)}>
             <div className="add-project__form-group">
-              <label>Name</label>
+              <label>Імья</label>
               <input
                 className="add-project__project-name"
                 type="text"
@@ -98,7 +98,7 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
               />
             </div>
             <div className="add-project__form-group" role="button">
-              <label>Color</label>
+              <label>Колір</label>
               <div className="add-project__select-color" onClick={() => setShowSelectColourDropdown(!showSelectColourDropdown)}>
                 <span className="add-project__selected-color" style={{ backgroundColor: `${selectedColour.hex}` }} />
                 <span className="add-project__selected-color-name">{selectedColour.name}</span>
@@ -113,7 +113,7 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
               </div>
             </div>
             <div className="add-project__form-group">
-              <label>View</label>
+              <label>Переглянути</label>
               <div className="add-project__set-view-type">
                 <div
                   className={`${projectIsList ? "selected" : ""} add-project__set-view-type--option`}
@@ -134,7 +134,7 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
                         <use xlinkHref={`${featherIcon}#check`}></use>
                       </svg>
                     </div>
-                    <p className="add-project__set-view-type--name">List</p>
+                    <p className="add-project__set-view-type--name">Список</p>
                   </div>
                 </div>
                 <div
@@ -148,7 +148,7 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
                         <use xlinkHref={`${featherIcon}#check`}></use>
                       </svg>
                     </div>
-                    <p className="add-project__set-view-type--name">Board</p>
+                    <p className="add-project__set-view-type--name">дошка</p>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
         <footer className="add-project__modal--footer">
           <div className="add-project__modal--buttons">
             <button className="action action__cancel" type="button" onClick={() => setShowDialog(!setShowDialog)}>
-              Cancel
+            Скасувати
             </button>
             <button
               className="action action__add-project"
@@ -169,7 +169,7 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
                 isEdit ? updateProjectHandler(e) : addProjectHandler(e);
               }}
             >
-              {isEdit ? "Save" : "Add"}
+              {isEdit ? "Зберегти" : "додати"}
             </button>
           </div>
         </footer>

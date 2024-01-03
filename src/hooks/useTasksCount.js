@@ -16,7 +16,7 @@ export const useTasksCount = (isDefaultGroup, projectId, name) => {
         where("projectId", "==", projectId),
         where("completed", "==", false)
       );
-    } else if (isDefaultGroup && name == "Today") {
+    } else if (isDefaultGroup && name == "Сьогодні") {
       q = query(
         collection(db, "user", `${currentUser && currentUser.id}/tasks`),
         where("date", "==", moment().format("DD-MM-YYYY"), where("completed", "==", false))

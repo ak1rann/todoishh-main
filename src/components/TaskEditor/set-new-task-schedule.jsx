@@ -13,7 +13,7 @@ export const SetNewTaskSchedule = ({ isQuickAdd, setSchedule, schedule }) => {
 
   const getDateStyle = () => {
     if (schedule?.day === "Сьогодні") {
-      let day = "date__today";
+      let day = "date__Сьогодні";
       return day;
     }
     if (schedule?.day === "завтра") {

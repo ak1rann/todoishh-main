@@ -19,7 +19,7 @@ export const ViewHeader = () => {
     <div className={`${currentView || defaultGroup ? "view-header__list" : "view-header__board"} `}>
       <div className="view-header__actions--left">
         <ProjectName />
-        {defaultGroup == "Today" && <Date />}
+        {defaultGroup == "Сьогодні" && <Date />}
       </div>
 
       {projectId && (

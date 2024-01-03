@@ -46,7 +46,7 @@ export const SetNewTaskProject = ({ isQuickAdd, project, setProject }) => {
         isQuickAdd ? showQUickAddDropDown(e.currentTarget.getBoundingClientRect()) : setShowDialog("SET_PROJECT");
       }}
     >
-      {popupSelectedProject?.selectedProjectName === "Inbox" ? (
+      {popupSelectedProject?.selectedProjectName === "Вхідні" ? (
         <InboxIcon width="18px" height="18px" fill="#5297ff" />
       ) : (
         <Dot color={`${popupSelectedProject?.projectColour?.hex}`} width={17} height={17} />

@@ -16,19 +16,19 @@ export const useBoardData = (selectedProject) => {
     data.columns = {
       TODO: {
         id: "TODO",
-        title: "To do",
+        title: "Зробити",
         columnTasks: todoTasks,
         hex: "#b8255f",
       },
       INPROGRESS: {
         id: "INPROGRESS",
-        title: "In Progress",
+        title: "В процесі",
         columnTasks: inprogressTasks,
         hex: "#ff9933",
       },
       COMPLETE: {
         id: "COMPLETE",
-        title: "Complete",
+        title: "Завершено",
         columnTasks: completeTasks,
         hex: "#299438",
       },

@@ -8,5 +8,5 @@ export const ProjectTasksCounts = ({ projectId, name, isDefaultGroup }) => {
   useLayoutEffect(() => {
     setTaskCount(count);
   }, [count, params.isDefaultGroup]);
-  return <div className={`task-count ${name == "Today" ? "task-count__red" : ""} `}>{taskCount > 0 && taskCount}</div>;
+  return <div className={`task-count ${name == "Сьогодні" ? "task-count__red" : ""} `}>{taskCount > 0 && taskCount}</div>;
 };

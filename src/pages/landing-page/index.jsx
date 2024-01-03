@@ -52,7 +52,7 @@ export const LandingPage = () => {
       <section className="section__intro">
         <div className="intro__hero">
           <h1 className="hero-text">
-          Організуйте свій <br /> деня і життя.
+          Організуйте свій <br /> день і життя.
           </h1>
           <h2 className="hero-text__sub">
           Станьте зосередженим, організованим і спокійним із Todoist. Програма для керування завданнями та списку справ.
