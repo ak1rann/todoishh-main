@@ -21,7 +21,7 @@ export const DefaultProjects = () => {
 
         <ProjectTasksCounts isDefaultGroup name={"Вхідні"} />
       </NavLink>
-      <NavLink to={"/app/Today"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
+      <NavLink to={"/app/Вхідні"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
         <div className="project-group__group">
           <div className="project-group__icon">
             <TodayIcon color={`${isLight ? "#058527" : "#25b84c"}`} />
@@ -32,26 +32,26 @@ export const DefaultProjects = () => {
 
         <ProjectTasksCounts isDefaultGroup name={"Сьогодні"} />
       </NavLink>
-      <NavLink to={"/app/Scheduled"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
+      <NavLink to={"/app/Сьогодні"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
         <div className="project-group__group">
           <div className="project-group__icon">
             <ScheduledIcon fill={`${isLight ? "#692fc2" : "#a970ff"}`} />
           </div>
 
-          <div className="project-group__name">За розкладом</div>
+          <div className="project-group__name">На вихідних</div>
         </div>
-        <ProjectTasksCounts isDefaultGroup name={"За розкладом"} />
+        <ProjectTasksCounts isDefaultGroup name={"На вихідних"} />
       </NavLink>
-      <NavLink to={"/app/Important"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
+      <NavLink to={"/app/На вихідних"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
         <div className="project-group__group">
           <div className="project-group__icon">
             <ImportantIcon stroke={`${isLight ? "#eb8909" : "#ff9a14"}`} />
           </div>
 
-          <div className="project-group__name">важливо</div>
+          <div className="project-group__name">Відмічені</div>
         </div>
 
-        <ProjectTasksCounts isDefaultGroup name={"важливо"} />
+        <ProjectTasksCounts isDefaultGroup name={"Відмічені"} />
       </NavLink>
     </div>
   );

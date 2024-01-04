@@ -1,6 +1,6 @@
 export const icebreakerTasks = [
   {
-    name: "Start your own project! 🚀",
+    name: "Почніть свій власний проект! 🚀",
     date: "",
     projectId: "welcome",
     taskId: "icebreaker_1",
@@ -8,7 +8,7 @@ export const icebreakerTasks = [
     completed: false,
   },
   {
-    name: "Schedule tasks 📅 ",
+    name: "Розклад завдань 📅 ",
     date: "",
     projectId: "welcome",
     taskId: "icebreaker_2",
@@ -16,7 +16,7 @@ export const icebreakerTasks = [
     completed: false,
   },
   {
-    name: "Get organized anywhere!",
+    name: "Будьте організовані будь-де!",
     date: "",
     projectId: "welcome",
     taskId: "icebreaker_3",
@@ -24,7 +24,7 @@ export const icebreakerTasks = [
     completed: false,
   },
   {
-    name: "View projects as lists or boards",
+    name: "Переглядайте проекти як списки або дошки",
     date: "",
     projectId: "welcome",
     taskId: "icebreaker_4",

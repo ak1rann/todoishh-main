@@ -6,6 +6,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Views } from "components/Views";
 
 function App() {
+  
+  
   return (
     <Router>
       <AuthProvider>
@@ -13,6 +15,8 @@ function App() {
       </AuthProvider>
     </Router>
   );
+  
 }
+
 
 export default App;

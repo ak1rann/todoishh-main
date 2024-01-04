@@ -88,6 +88,8 @@ export const SetNewTaskSchedulePopper = ({ isQuickAdd, setShowPopup, setSchedule
           </li>
         </ul>
       </div>
+      
     </div>
+    
   );
 };
