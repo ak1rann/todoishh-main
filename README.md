@@ -1,7 +1,7 @@
 
 ## Todoish (Todoist clone)
 
-![App Screenshot](https://i.ibb.co/TrqT4bx/image.png)
+
 
 Todoish is the most advanced clone of Todoist on the internet! 
 This project captures many of the features users of Todoist love and appreciate
