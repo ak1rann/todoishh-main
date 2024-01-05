@@ -21,7 +21,7 @@ export const DefaultProjects = () => {
 
         <ProjectTasksCounts isDefaultGroup name={"Вхідні"} />
       </NavLink>
-      <NavLink to={"/app/Вхідні"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
+      <NavLink to={"/app/Today"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
         <div className="project-group__group">
           <div className="project-group__icon">
             <TodayIcon color={`${isLight ? "#058527" : "#25b84c"}`} />
@@ -32,7 +32,7 @@ export const DefaultProjects = () => {
 
         <ProjectTasksCounts isDefaultGroup name={"Сьогодні"} />
       </NavLink>
-      <NavLink to={"/app/Сьогодні"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
+      <NavLink to={"/app/Noted"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
         <div className="project-group__group">
           <div className="project-group__icon">
             <ScheduledIcon fill={`${isLight ? "#692fc2" : "#a970ff"}`} />
@@ -42,7 +42,7 @@ export const DefaultProjects = () => {
         </div>
         <ProjectTasksCounts isDefaultGroup name={"На вихідних"} />
       </NavLink>
-      <NavLink to={"/app/На вихідних"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
+      <NavLink to={"/app/Weekend"} className={({ isActive }) => (isActive ? "active project-group" : "project-group")}>
         <div className="project-group__group">
           <div className="project-group__icon">
             <ImportantIcon stroke={`${isLight ? "#eb8909" : "#ff9a14"}`} />

@@ -66,3 +66,4 @@ export const createUserProfileDocument = async (userAuth) => {
   }
   return userRef;
 };
+
