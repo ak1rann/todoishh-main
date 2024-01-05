@@ -41,8 +41,17 @@ export const UserOptions = ({ closeOverlay, xPosition, yPosition }) => {
                   <strong>{displayName}</strong>
                 </p>
                 <p className="user-info__email">{email}</p>
+                
               </div>
             </div>
+          </li>
+          
+          <li className="user-options__pro" onClick={(event) => themeToggleHandler(event)}>
+            <svg className="user-options__icon" width="16" height="16" stroke="currentColor" fill="none" strokeWidth="9px">
+            <use href={`${featherIcon}#log-out`}></use>
+            </svg>
+
+            <div className="user-options__item--content">{`${isLight ? "Версія" : "Версія"}`} pro</div>
           </li>
           <li className="user-options__item" onClick={(event) => themeToggleHandler(event)}>
             <svg className="user-options__icon" width="17" height="17" stroke="currentColor" fill="none" strokeWidth="1px">
@@ -51,6 +60,7 @@ export const UserOptions = ({ closeOverlay, xPosition, yPosition }) => {
 
             <div className="user-options__item--content">{`${isLight ? "Dark" : "Light"}`} Режим</div>
           </li>
+          
           <li className="user-options__item" onClick={(e) => handleLogout(e)}>
             <svg className="user-options__icon" width="17" height="17" stroke="currentColor" fill="none" strokeWidth="1px">
               <use href={`${featherIcon}#log-out`}></use>
@@ -58,6 +68,7 @@ export const UserOptions = ({ closeOverlay, xPosition, yPosition }) => {
 
             <div className="user-options__item--content">Вийти</div>
           </li>
+          
         </ul>
       </div>
     </div>
