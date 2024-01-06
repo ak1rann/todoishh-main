@@ -53,13 +53,7 @@ export const UserOptions = ({ closeOverlay, xPosition, yPosition }) => {
 
             <div className="user-options__item--content">{`${isLight ? "Версія" : "Версія"}`} pro</div>
           </li>
-          <li className="user-options__item" onClick={(event) => themeToggleHandler(event)}>
-            <svg className="user-options__icon" width="17" height="17" stroke="currentColor" fill="none" strokeWidth="1px">
-              <use href={`${featherIcon}#${isLight ? "moon" : "sun"}`}></use>
-            </svg>
-
-            <div className="user-options__item--content">{`${isLight ? "Dark" : "Light"}`} Режим</div>
-          </li>
+          
           
           <li className="user-options__item" onClick={(e) => handleLogout(e)}>
             <svg className="user-options__icon" width="17" height="17" stroke="currentColor" fill="none" strokeWidth="1px">

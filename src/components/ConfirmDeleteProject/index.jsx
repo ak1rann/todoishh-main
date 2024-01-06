@@ -11,7 +11,7 @@ export const ConfrimDeleteProject = ({ projectId, closeOverlay }) => {
   const { currentUser } = useAuth();
   const navigate = useNavigate();
   const deleteHandler = async (e) => {
-    //   setSelectedProject({ selectedProjectName: "Inbox", defaultProject: true });
+   
     e.stopPropagation();
     e.preventDefault();
     try {

@@ -25,7 +25,7 @@ export const batchWriteIcebreakerTasks = async (userId) => {
   const icebreakerProjectId = "welcome";
   try {
     const icebreakerProject = {
-      name: "Welcome 👋",
+      name: "Привіт ознайомся",
       projectId: icebreakerProjectId,
       projectColour: {
         name: "Charcoal",

@@ -67,7 +67,7 @@
 .set-schedule__overlay {
 width: auto;
 height: auto;
- background-color: #363636;
+ background-color: #f6f6f6;
  padding: 20px 10px;
 }
 .rc-calendar-date{
@@ -80,11 +80,11 @@ height: auto;
 }
 .rc-calendar-ok-btn{
  
-font-size: 1rem;
+font-size: 0.9rem;
 cursor: pointer;
-padding: 2%;
-background-color: #fff;
-color: #282828;
+padding: 0.5%;
+background-color: rgb(255, 199, 199);
+color: #000000;
 }
 
 .rc-calendar-today-btn {
