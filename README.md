@@ -1,4 +1,4 @@
-Available Scripts
+#Available Scripts
 In the project directory, you can run:
-npm i
-npm start
+#npm i
+#npm start
