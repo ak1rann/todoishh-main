@@ -12,11 +12,11 @@
   padding: 0.4rem 0;
   position: absolute;
   background-color: #282828;
-  width: 14rem;
+  width: 17rem;
   border-radius: 3px;
   box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
   z-index: 10;
-  max-height: 150px;
+  max-height: 300px;
   overflow-y: auto;
   font-size: 13px;
   font-weight: 400;
@@ -58,4 +58,35 @@
   &--option {
     cursor: pointer;
   }
+}
+
+.set-schedule__icon {
+ margin-right: 10px;
+}
+
+.set-schedule__overlay {
+width: auto;
+height: auto;
+ background-color: #363636;
+ padding: 20px 10px;
+}
+.rc-calendar-date{
+  cursor: pointer;
+  padding: 5px;
+
+}
+.rc-calendar-my-select{
+  display: none;
+}
+.rc-calendar-ok-btn{
+ 
+font-size: 1rem;
+cursor: pointer;
+padding: 2%;
+background-color: #fff;
+color: #282828;
+}
+
+.rc-calendar-today-btn {
+  display: none;
 }
