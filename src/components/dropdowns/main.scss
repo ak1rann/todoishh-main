@@ -1,5 +1,6 @@
 .set-project__popper--overlay,
 .set-schedule__popper--overlay {
+  
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -11,10 +12,10 @@
 .set-schedule__popper {
   padding: 0.4rem 0;
   position: absolute;
-  background-color: #282828;
+  background-color: #815959;
   width: 17rem;
   border-radius: 3px;
-  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+  box-shadow: 0 10px 20px #130e0e30, 0 6px 6px #0000003b;
   z-index: 10;
   max-height: 300px;
   overflow-y: auto;
@@ -67,7 +68,7 @@
 .set-schedule__overlay {
 width: auto;
 height: auto;
- background-color: #f6f6f6;
+ background-color: #9e4545;
  padding: 20px 10px;
 }
 .rc-calendar-date{
@@ -83,7 +84,7 @@ height: auto;
 font-size: 0.9rem;
 cursor: pointer;
 padding: 0.5%;
-background-color: rgb(255, 199, 199);
+background-color: rgb(251, 246, 246);
 color: #000000;
 }
 
