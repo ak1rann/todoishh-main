@@ -169,7 +169,7 @@ export const TaskEditor = ({ column, isQuickAdd, isEdit, task, closeOverlay }) =
 
           <div className={`add-task__actions ${isQuickAdd ? "quick-add__actions" : ""}`}>
             <button className=" action add-task__actions--add-task" type="submit" disabled={isEdit ? false : disabled}>
-              {isEdit ? "Save" : "Add task"}
+              {isEdit ? "зберегти" : "Додати завдання"}
             </button>
             <button
               className={` action  ${isLight ? "action__cancel" : "action__cancel--dark"}`}
