@@ -50,6 +50,7 @@ export const SetNewTaskSchedulePopper = ({ isQuickAdd, setShowPopup, setSchedule
   return (
     <div
       className="option__overlay"
+      
       onClick={(event) => {
         event.stopPropagation();
         isQuickAdd ? setShowPopup(false) : closeOverlay(event);
@@ -60,12 +61,17 @@ export const SetNewTaskSchedulePopper = ({ isQuickAdd, setShowPopup, setSchedule
         className="set-schedule__popper"
         onClick={(event) => event.stopPropagation()}
         style={{ top: `${targetedposition.y + 40}px`, left: `${targetedposition.x}px` }}
+        
       >
         {isCalendarOpen && (
+           
           <div className="set-schedule__overlay">
             <h2> <span>{selectedDateVal?.format('DD-MM-YYYY')}</span></h2>
+            
             <ReactCalendar  showOk onOk={onOkHandler} showDateInput={false} onChange={(date)=>setSelectedDateValue(date)}/>
+           
           </div>
+          
         )}
         {!isCalendarOpen && <ul>
           {/* // todo: change this class name to "scheduler-suggestions-item" */}

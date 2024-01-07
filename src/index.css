@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: "SegoeUI";
+  background-color: #fbfbfb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
