@@ -24,7 +24,7 @@ export const SetNewTaskProjectPopper = ({
     setProject({ selectedProjectName: "Вхідні", selectedProjectId: "" });
     setPopupSelectedProject({ selectedProjectName: "Вхідні", selectedProjectId: "", defaultProject: true });
   };
-
+  
   const targetedposition = parentPosition ? parentPosition : { x: xPosition, y: yPosition };
 
   return (
@@ -69,6 +69,8 @@ export const SetNewTaskProjectPopper = ({
             ))}
         </ul>
       </div>
+
     </div>
   );
+  
 };
