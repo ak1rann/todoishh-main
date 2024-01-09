@@ -15,22 +15,31 @@ export const useTasks = () => {
 
   const [loading, setLoading] = useState(true);
 
+  const getNextSunday = moment().day(7).format("DD-MM-YYYY") === moment().format("DD-MM-YYYY") ? moment().add(1, 'weeks').day(7).format("DD-MM-YYYY") : moment().day(7).format("DD-MM-YYYY")
+  const getNextSaturday = moment().day(6).format("DD-MM-YYYY") === moment().format("DD-MM-YYYY") ? moment().add(1, 'weeks').day(6).format("DD-MM-YYYY") : moment().day(6).format("DD-MM-YYYY")
+
   useEffect(() => {
     setLoading(true);
-
     let q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`));
+    console.log(selectedProject);
+    console.log(0);
     if (selectedProject && !collatedTasksExist(selectedProject)) {
+      console.log(1);
       q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`), where("projectId", "==", selectedProject));
-    } else if (selectedProject === "Сьогодні    ") {
+    } else if (selectedProject === "Today") {
+      console.log(2);
       q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`), where("date", "==", moment().format("DD-MM-YYYY")));
-    } else if (selectedProject === "Вхідні" || selectedProject === 0) {
-      q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`), where("projectId", "==", ""));
-    } else if (selectedProject === "За розкладом") {
-      q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`), where("date", "!=", ""), where("completed", "==", false));
-    } else if (selectedProject === "важливо") {
+    } else if (selectedProject === "Inbox" || selectedProject === 0) {
+      console.log(3);
+      q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`));
+    } else if (selectedProject === "Noted") {
+      console.log(4);
+      q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`), where("date", "in", [getNextSunday, getNextSaturday]));
+      console.log(q);
+    } else if (selectedProject === "Weekend") {
+      console.log(5);
       q = query(collection(db, "user", `${currentUser && currentUser.id}/tasks`), where("important", "==", true));
     }
-
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const result = [];
       querySnapshot.forEach((doc) => {
@@ -49,5 +58,6 @@ export const useTasks = () => {
     });
     return unsubscribe;
   }, [selectedProject, currentUser]);
+  console.log(tasks);
   return { setTasks, tasks, loading };
 };
