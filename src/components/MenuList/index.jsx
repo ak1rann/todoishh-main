@@ -121,7 +121,7 @@ export const MenuList = ({
             <div className="menu__list--icon">
               <EditIcon />
             </div>
-            <span className="menu__list--content">Edit {targetIsProject ? "Project" : "Task"}</span>
+            <span className="menu__list--content">Редагувати {targetIsProject ? "Project" : "Task"}</span>
           </li>
 
           <li className="menu__list--item" onClick={(e) => deleteHandler(e)}>
@@ -129,7 +129,7 @@ export const MenuList = ({
               <DeleteIcon />
             </div>
 
-            <span className="menu__list--content">Delete {targetIsProject ? "Project" : "Task"}</span>
+            <span className="menu__list--content">Видалити {targetIsProject ? "Project" : "Task"}</span>
           </li>
 
           {targetIsProject && (
@@ -138,7 +138,7 @@ export const MenuList = ({
                 <ArchiveIcon />
               </div>
 
-              <span className="menu__list--content">Archive Project</span>
+              <span className="menu__list--content">Заархівувати</span>
             </li>
           )}
 
@@ -150,7 +150,7 @@ export const MenuList = ({
                 </svg>
               </div>
 
-              <span className="menu__list--content">{taskIsImportant ? "Remove" : "Add"} Importance </span>
+              <span className="menu__list--content">{taskIsImportant ? "Remove" : "Add"} Відмічені </span>
             </li>
           )}
         </ul>
