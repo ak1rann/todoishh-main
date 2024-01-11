@@ -161,7 +161,7 @@ export const TaskEditor = ({ column, isQuickAdd, isEdit, task, closeOverlay }) =
             <div className="add-task__attributes">
               <div className="add-task__attributes--left">
                 <SetNewTaskSchedule isQuickAdd={isQuickAdd} schedule={schedule} setSchedule={setSchedule} />
-                {/* <SetNewTaskProject isQuickAdd={isQuickAdd} project={project} projects={projects} setProject={setProject} /> */}
+                { <SetNewTaskProject isQuickAdd={isQuickAdd} project={project} projects={projects} setProject={setProject} /> }
               </div>
               <div className="add-task__attributes--right"></div>
             </div>

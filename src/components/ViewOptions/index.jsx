@@ -35,7 +35,7 @@ export const ViewOptions = ({ closeOverlay, xPosition, yPosition, projectId }) =
               </svg>
             </div>
 
-            <span className="menu__list--content">List</span>
+            <span className="menu__list--content">Список</span>
           </li>
           <li role="button" className="menu__list--item" onClick={() => setProjectView(false)}>
             <div className="menu__list--icon">
@@ -44,7 +44,7 @@ export const ViewOptions = ({ closeOverlay, xPosition, yPosition, projectId }) =
               </svg>
             </div>
 
-            <span className="menu__list--content">Board</span>
+            <span className="menu__list--content">дошка</span>
           </li>
         </ul>
       </div>

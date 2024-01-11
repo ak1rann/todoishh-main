@@ -34,4 +34,4 @@ export const ProjectName = () => {
 
     return <h1 className="project__name">{customProjectTitle || name}</h1>;
 };
-//CHange every instance of selected preojecta dn use useparams instead
+
