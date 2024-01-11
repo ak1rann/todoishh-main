@@ -4,7 +4,7 @@ import { useAuth } from "hooks";
 export const LoginSignupForm = () => {
   const location = useLocation();
   const { pathname } = location;
-  const title = pathname === "/signin" ? "Log in" : "Sign up";
+  const title = pathname === "/signin" ? "Створіть аккаунт" : "Увійти в аккаунт";
 
   const { signinGoogle } = useAuth();
 
