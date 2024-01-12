@@ -53,7 +53,83 @@ html {
     url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
   font-weight: 700;
 }
+/* @font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("assets/fonts/Segoe UI.woff") format("woff");
+}
 
+@font-face {
+  font-family: "Segoe UI Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Italic"), url("assets/fonts/Segoe UI Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI SemiBold";
+  font-style: normal;
+  src: local("Segoe UI SemiBold"), url("assets/fonts/Segoe UI SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Segoe UI Bold"), url("assets/fonts/Segoe UI Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold Italic"), url("assets/fonts/Segoe UI Bold Italic.woff") format("woff");
+} */
+
+p {
+  margin: unset;
+}
+ul {
+  all: unset;
+}
+body {
+  overflow: auto;
+}
+li {
+  list-style: none;
+}
+
+* ~ input:focus {
+  outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #8b8b8b;
+}
+
+@media only screen and (max-width: 56.25em) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+button {
+  border: unset;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: unset;
+}
+
+a {
+  text-decoration: unset;
+  color: inherit;
+}
+
+/* Todo: create appropriate file for this */
 button.action {
   border-radius: 5px;
   font-weight: 600;

@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 import { SetNewTaskProjectPopper } from 'components/dropdowns/set-new-task-project-popper';
 export const SetNewTaskProject = ({ isQuickAdd, project, setProject }) => {
     const params = useParams();
-    // const { selectedProject } = useSelectedProjectValue(params);
+ 
     const { projects } = useProjects();
     const { selectedProject, defaultGroup } = useSelectedProject(
         params,
